@@ -1,0 +1,15 @@
+{
+	"giotto_rest_api":{
+		"server":"https://bd-exp.andrew.cmu.edu",
+		"port":"82",
+		"oauth_port":"81",
+		"api_prefix":"/api"
+	},
+
+	"oauth":{
+		"id":"9V9CgOEgypeBr8LlSeaC5NbEtqjIQZ8f7bBpWz0H",
+		"key":"2RhqVwdqIjEJyEWly9GN3ZC1pmlhZVLqTcl0y0soAdrHNFA0uP"
+	},
+
+	"tag":"room:DemoRoom"
+}
