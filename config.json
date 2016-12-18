@@ -1,15 +1,15 @@
 {
 	"giotto_rest_api":{
-		"server":"https://bd-exp.andrew.cmu.edu",
-		"port":"82",
-		"oauth_port":"81",
+		"server":"BD-ADDRESS",
+		"port":"DATA_SERVICE_PORT",
+		"oauth_port":"CENTRAL_SERVICE_PORT",
 		"api_prefix":"/api"
 	},
 
 	"oauth":{
-		"id":"9V9CgOEgypeBr8LlSeaC5NbEtqjIQZ8f7bBpWz0H",
-		"key":"2RhqVwdqIjEJyEWly9GN3ZC1pmlhZVLqTcl0y0soAdrHNFA0uP"
+		"id":"CLIENT_ID",
+		"key":"CLIENT_SECRET"
 	},
 
-	"tag":"room:DemoRoom"
+	"tag":"TAG to be compared to"
 }

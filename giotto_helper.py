@@ -1,4 +1,8 @@
 import requests
+'''
+This is the GioTTO helper file which has the basic api calls
+to the Building Depot/ GioTTO
+'''
 import time
 import json
 import time
@@ -41,7 +45,7 @@ class GiottoHelper:
       sensorUUID = sensor
       OauthToken = self.getOauthToken()
       header = {"Authorization": "bearer " + OauthToken, 'content-type':'application/json'}
-      end_time = int(time.time()-86400*35.5)
+      end_time = int(time.time()-86400)
       #print end_time
       start_time = int(end_time-(60)*mins) 
       url1 = url+":"+self.giotto_rest_api['port']+"/api/sensor/%s/timeseries?start_time=%s&end_time=%s" % (sensorUUID, start_time,end_time)
