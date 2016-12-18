@@ -84,9 +84,9 @@ def print2file():
 
 def onlytrain():
     if platform == "linux" or platform == "linux2":
-        bashCommand = bashCommand = "matlab -nodisplay -r \"cd ./DataProcess; Suggest_Rules\""
+        bashCommand ="matlab -nodisplay -r \"cd ./DataProcess; Suggest_Rules\""
     elif platform == "win32":
-        bashCommand = bashCommand = "matlab -nodesktop -r \"cd ./DataProcess; Suggest_Rules\""
+        bashCommand ="matlab -nodesktop -r \"cd ./DataProcess; Suggest_Rules\""
     os.system(bashCommand)
     
 if __name__ == "__main__":
