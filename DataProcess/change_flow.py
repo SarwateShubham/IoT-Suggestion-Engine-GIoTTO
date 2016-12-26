@@ -6,8 +6,14 @@ the most dominant sensor and the value to be compared to
 import sys,json
 import os
 from os.path import expanduser
-flow_file=expanduser("~")+'\.node-red'+'\\flows_'+os.environ['COMPUTERNAME']+'.json'
-print flow_file,os.environ['COMPUTERNAME']
+from sys import platform
+import socket
+if platform == "linux" or platform == "linux2":
+   flow_file=expanduser("~")+'/.node-red'+'/flows_'+socket.gethostname()+'.json'
+elif platform == "win32":
+   flow_file=expanduser("~")+'\.node-red'+'\\flows_'+os.environ['COMPUTERNAME']+'.json'
+
+print flow_file
 with open(flow_file, 'r') as myfile:
     data=myfile.read()
 

@@ -10,14 +10,14 @@
 
 %% Storing data on the workbench
 
-fnam = dir('..\Sensor_data\*.csv');
+fnam = dir('../Sensor_data/*.csv');
 numfids = length(fnam);
 values=zeros(101,numfids);
 names={'time'};
 
 %% Pre-processing
 for K = 1:(numfids)
-  [time,in,value]=(importfile(strcat('..\Sensor_data\',fnam(K).name)));
+  [time,in,value]=(importfile(strcat('../Sensor_data/',fnam(K).name)));
   fnam(K).name;
   time=unique(time,'stable'); 
   norm_time = (time - min(time)) / ( max(time) - min(time) );
